@@ -9,10 +9,10 @@ function App() {
   const uploadImage = files => {
     const formData = new FormData();
     formData.append('file', imageSelected);
-    formData.append('upload_preset', process.env.CLOUD_PRESET);
+    formData.append('upload_preset', 'yuxlp3ad');
 
     axios.post(
-      process.env.CLOUD_URL, 
+      'https://api.cloudinary.com/v1_1/kryyp/image/upload/', 
       formData
     ).then(res => {
       console.log(res)
