@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import axios from 'axios';
 
-function App() {
+const App = () => {
 
   const [imageSelected, setImageSelected] = useState();
 
